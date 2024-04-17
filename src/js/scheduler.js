@@ -118,7 +118,7 @@ function addClock() {
     newClock.className = 'clock';
     newClock.id = selectedTimezone.split('/').join(''); // Ensure the ID is valid HTML and JS friendly
     document.getElementById('clocks').appendChild(newClock);
-    updateClock(); // Make sure it's updated immediately upon being added
+    updateClocks(); 
 }
 
 function updateClocks() {
@@ -132,7 +132,7 @@ function updateClocks() {
 
 setInterval(updateClocks, 1000);
 
-// Ensure the time zone selector is populated after the DOM is loaded
+
 document.addEventListener('DOMContentLoaded', function() {
     const timezoneSelector = document.getElementById('timezone-selector');
     const timeZones = Intl.supportedValuesOf('timeZone');
