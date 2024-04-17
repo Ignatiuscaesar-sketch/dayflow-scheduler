@@ -1,0 +1,79 @@
+/* css/style.css */
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100%;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+  }
+  
+  .side-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #ccc;
+  }
+  
+  .calendar {
+    padding: 20px;
+  }
+  
+  .activities-list {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .main {
+    flex: 2;
+    padding: 20px;
+  }
+  
+  .journal {
+    flex: 1;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+  }
+  
+  .clock-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f2f2f2;
+  }
+  
+  .clock {
+    margin: 5px;
+    padding: 5px 10px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+  }
+  

@@ -1,0 +1,42 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>DayFlow Scheduler</title>
+  <link rel="stylesheet" href="src/js/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="side-panel">
+      <div class="calendar">
+  <input type="date" id="event-date" onchange="loadActivitiesForSelectedDate()">
+  <div id="clocks" class="clock-container">
+    <div id="kenyaTime" class="clock">Nairobi: Loading...</div>
+    <div id="ukTime" class="clock">London: Loading...</div>
+    <div id="usTime" class="clock">New York: Loading...</div>
+    <div>
+      <select id="timezone-selector"></select>
+      <button onclick="addClock()">Add Clock</button>
+    </div>
+  </div>
+  <div class="activities-list">
+    <h3>Daily Events</h3>
+    <ul id='activity-list'></ul>
+  </div>
+</div>
+</div>
+    <div class="main">
+      <h1>Daily Event Scheduler</h1>
+      <h2 id='activity'>Current Activity: None</h2>
+      <h3 id='timer'>00:00:00</h3>
+      <button id='start'>Start Day</button>
+      <button id='pause'>Pause</button>
+    </div>
+    <div class="journal">
+      <h3>Activity Journal</h3>
+      <textarea id="journal-entry" placeholder="Write your reflections here..."></textarea>
+      <button id="save-journal">Save Entry</button>
+    </div>
+  </div>
+  <script src="src/js/scheduler.js"></script>
+</body>
+</html>
